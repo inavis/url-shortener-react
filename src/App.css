@@ -19,6 +19,7 @@
         margin: 10% 23%;
         width:50%;
         background-color: white;
+        border-radius: 10px;
     }
 }
 body{
@@ -29,7 +30,10 @@ body{
     text-align: center;
     background-color: lightgreen;
     border-bottom: 1px solid gray;
-    color: black1;
+    color: gray;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: x-large;
 }
 form{
     text-align: center;
