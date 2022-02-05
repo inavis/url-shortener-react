@@ -4,7 +4,7 @@ import * as React from 'react';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 
-import { Formik,useFormik } from 'formik';
+import {useFormik } from 'formik';
 import * as yup from 'yup';
 
 //using formik and yup for form validation and handling
@@ -51,7 +51,7 @@ export function ResetPassword() {
         validationSchema:validateForm,
         onSubmit:(values) =>{
         console.log("On submit value",values);
-        resetpassword({password:values.password,sid:sid})
+        resetpassword({password:values.password,url:`http://localhost:3000/reset/${sid}`})
         }
     })
 
@@ -69,7 +69,7 @@ export function ResetPassword() {
         <br></br>
 
      <div>
-     <TextField id="filled-basic" className="textbox" type="password" label="Password" variant="filled" required
+     <TextField  className="textbox" type="password" label="Password" variant="filled" required
            id='password'
            name='password'
            value={values.password}
@@ -82,7 +82,7 @@ export function ResetPassword() {
       <br></br>
 
         <div>
-        <Button variant='contained' className='textbox' type="submit" style={{background:"lightslategray"}} >
+        <Button variant='contained' className='textbox' type="submit" style={{background:"lightgreen"}} >
             Update Password
       </Button>
         </div>

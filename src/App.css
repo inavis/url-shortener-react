@@ -22,13 +22,14 @@
     }
 }
 body{
-    background-color: rgb(83, 104, 143);
+    background-color: rgb(12, 46, 15);
 }
 .header{
     height: 40px;
     text-align: center;
-    background-color: lightgrey;
+    background-color: lightgreen;
     border-bottom: 1px solid gray;
+    color: black1;
 }
 form{
     text-align: center;
@@ -49,13 +50,28 @@ form{
     cursor: pointer;
 }
 .message{
-    color: black;
-    background-color: rgb(148, 156, 165);
-    border: 1px solid black;
+    color: darkred;
+    background-color: lightcoral;
+    border: 1px solid darkred;
     margin: 5%;
     padding: 5px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 .color-white{
     color: white;
+}
+.table{
+    margin: 10%;
+}
+.board{
+    text-align: center;
+    padding: 2%;
+    border-radius: 20px;
+    border: 7px solid white;
+}
+/* .color-text{
+    color:rgb(235, 250, 181) ;
+} */
+.bg-gray{
+    background-color: rgb(235, 195, 94);
 }

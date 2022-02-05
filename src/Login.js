@@ -4,7 +4,7 @@ import * as React from 'react';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 
-import { Formik,useFormik } from 'formik';
+import {useFormik } from 'formik';
 import * as yup from 'yup';
 //using formik and yup for form validation and handling
 import Cookies from 'js-cookie'
@@ -84,7 +84,7 @@ export function Login(){
         </div>
         <br></br>
        <div>
-       <TextField id="filled-basic" className="textbox" label="Username" variant="filled" required
+       <TextField  className="textbox" label="Email" variant="filled" required
            id='email'
            name='email'
            value={values.email}
@@ -97,7 +97,7 @@ export function Login(){
       <br></br>
 
      <div>
-     <TextField id="filled-basic" className="textbox" type="password" label="Password" variant="filled" required
+     <TextField  className="textbox" type="password" label="Password" variant="filled" required
            id='password'
            name='password'
            value={values.password}
@@ -110,7 +110,7 @@ export function Login(){
       <br></br>
 
         <div>
-        <Button variant='contained' className='textbox' type="submit" style={{background:"lightslategray"}} >
+        <Button variant='contained' className='textbox' type="submit" style={{background:"lightgreen"}} >
         Login
       </Button>
         </div>

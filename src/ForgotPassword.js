@@ -3,7 +3,7 @@ import * as React from 'react';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 
-import { Formik,useFormik } from 'formik';
+import { useFormik } from 'formik';
 import * as yup from 'yup';
 
 //using formik and yup for form validation and handling
@@ -66,7 +66,7 @@ export function ForgotPassword() {
         </div>
         <br></br>
        <div>
-       <TextField id="filled-basic" className="textbox" label="Username" variant="filled" required
+       <TextField  className="textbox" label="Username" variant="filled" required
            id='email'
            name='email'
            value={values.email}
@@ -79,7 +79,7 @@ export function ForgotPassword() {
       <br></br>
 
         <div>
-        <Button variant='contained' className='textbox' type="submit" style={{background:"lightslategray"}} >
+        <Button variant='contained' className='textbox' type="submit" style={{background:"lightgreen"}} >
         Send Email
       </Button>
         </div>
