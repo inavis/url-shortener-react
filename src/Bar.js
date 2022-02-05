@@ -22,7 +22,11 @@ export function Bar() {
         </Button>
 
         <Button color="inherit" style={{ marginRight: "auto" }} onClick={() => history.push("/generateurl")}>
-          Generate URL
+          Generate short URL
+        </Button>
+
+        <Button color="inherit" style={{ marginRight: "auto" }} onClick={() => history.push("/getlongurl")}>
+          Get Long URL
         </Button>
 
         <Button color="inherit" onClick={() => {

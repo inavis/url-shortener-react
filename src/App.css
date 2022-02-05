@@ -75,3 +75,16 @@ form{
 .bg-gray{
     background-color: rgb(235, 195, 94);
 }
+
+.notfoundimage{
+    width: 100%;
+    height: max-content;
+}
+
+.output{
+    text-align:"center";
+    font-weight: bold;
+    word-break: break-all;
+    letter-spacing: 1px;
+    color: darkgreen;
+}

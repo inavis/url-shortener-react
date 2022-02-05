@@ -10,6 +10,7 @@ import { ConfirmUser } from './ConfirmUser';
 import { LoadUrl } from './LoadUrl';
 import { GenerateUrl } from './GenerateUrl';
 import { LoadData } from './Dashboard';
+import { GetLongUrl } from './GetLongUrl';
 
 function App() {
   return (
@@ -50,6 +51,10 @@ function App() {
 
          <Route exact path="/generateurl">
            <GenerateUrl/>
+         </Route>
+
+         <Route exact path="/getlongurl">
+           <GetLongUrl/>
          </Route>
 
          <Route exact path="/">

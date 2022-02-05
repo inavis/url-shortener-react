@@ -54,7 +54,7 @@ function TableDisplay({arr}){
                 <br></br> */}
         
                     <Paper >
-                        <TableContainer style={{ background: "darkgreen",border:"7px solid white" }} >
+                        <TableContainer style={{ background: "lightgreen",border:"7px solid white" }} >
                         <Table sx={{ minWidth: 650 }} aria-label="simple table">
                         <TableHead>
                             <TableRow>
