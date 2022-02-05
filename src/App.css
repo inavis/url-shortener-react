@@ -87,4 +87,5 @@ form{
     word-break: break-all;
     letter-spacing: 1px;
     color: darkgreen;
+    padding: 10px;
 }

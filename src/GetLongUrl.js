@@ -29,11 +29,12 @@ export function GetLongUrl(){
         })
         .then((data)=>data.json())
         .then((res)=>{
-            // console.log(res.long_url.longurl)
+            console.log(res)
             setoutput(`The long url of ${values.sid} is ${res.long_url.longurl}`)
         })
         .catch((err)=>{
-          console.log(err)
+          console.log(err);
+          setoutput(`Some error occured. Check your url again or try again after sometime.`)
         })
       }
 
